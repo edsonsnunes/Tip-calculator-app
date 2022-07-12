@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Space Mono", monospace;
+}
+.conteudo {
+  width: 375px;
+  height: 100vh;
+}
+.titulo {
+  background-color: hsl(185, 41%, 84%);
+  font-size: 24px;
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+  padding: 10%;
+  line-height: 30px;
+}
+.valores {
+  background-color: white;
+  border-radius: 19px;
+  position: relative;
+  bottom: 20px;
+  color: hsl(186, 14%, 43%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conta {
+  padding-top: 8%;
+}
+.input {
+  width: 100%;
+  height: 42px;
+  border: none;
+  background: hsl(189, 41%, 97%);
+  border-radius: 4px;
+  text-align: end;
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+}
+#valorConta {
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+}
+#numPessoas {
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+}
+.selectTip {
+  padding-top: 8%;
+  padding-bottom: 4%;
+  padding-left: 8%;
+  align-self: start;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 115px 115px;
+  grid-template-rows: 27px 27px 27px;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 20%;
+  row-gap: 43%;
+  padding-bottom: 30%;
+}
+.botao {
+  width: 128%;
+  height: 169%;
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.botao:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+.botao:focus {
+  background-color: hsl(172, 67%, 45%);
+}
+.botaoCustom {
+  width: 128%;
+  height: 169%;
+  color: hsl(186, 14%, 43%);
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.botaoCustom :hover {
+  background-color: hsl(172, 67%, 45%);
+}
+.pessoas {
+  padding-bottom: 30px;
+}
+.total {
+  background-color: hsl(183, 100%, 15%);
+  width: 310.5px;
+  border-radius: 13px;
+  padding-top: 5%;
+}
+.descricao {
+  color: white;
+}
+.person {
+  font-size: 12px;
+  color: hsl(186, 14%, 43%);
+}
+.valor {
+  font-size: 29px;
+  color: hsl(172, 67%, 45%);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+.reset {
+  width: 84%;
+  padding: 2%;
+  border: none;
+  border-radius: 6px;
+  font-size: 21px;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .conteudo {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo {
+    padding: 6%;
+  }
+  .valores {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 50%;
+  }
+  .grid {
+    grid-template-columns: 74px 74px 74px;
+    grid-template-rows: 27px 27px 27px;
+    column-gap: 13%;
+  }
+  .desk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .total {
+    width: 360.5px;
+    border-radius: 13px;
+    padding-top: 5%;
+  }
+  .button {
+    padding-top: 29%;
+    padding-bottom: 10%;
+  }
+  .selectTip {
+    padding-left: 0%;
+  }
+}
